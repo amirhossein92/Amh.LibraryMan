@@ -7,15 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Amh.LibraryMan.UI.Base;
 using Amh.LibraryMan.UI.Services;
 
 namespace Amh.LibraryMan.UI.UserControls
 {
-    public partial class UcPublishers : UserControl
+    public partial class UcPublishers : UcBase
     {
         private PublisherService _publisherService = new PublisherService();
 
-        public UcPublishers()
+        public UcPublishers() : base("Publishers")
         {
             InitializeComponent();
         }

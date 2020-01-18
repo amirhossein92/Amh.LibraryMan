@@ -7,14 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Amh.LibraryMan.UI.Base;
 using Amh.LibraryMan.UI.Models;
 using Amh.LibraryMan.UI.Services;
 
 namespace Amh.LibraryMan.UI.UserControls
 {
-    public partial class UcBooks : UserControl
+    public partial class UcBooks : UcBase
     {
-        public UcBooks()
+        public UcBooks() : base("Books")
         {
             InitializeComponent();
         }

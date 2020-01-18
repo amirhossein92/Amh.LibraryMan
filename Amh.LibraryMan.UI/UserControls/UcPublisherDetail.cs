@@ -7,17 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Amh.LibraryMan.UI.Base;
 using Amh.LibraryMan.UI.Models;
 using Amh.LibraryMan.UI.Services;
 
 namespace Amh.LibraryMan.UI.UserControls
 {
-    public partial class UcPublisherDetail : UserControl
+    public partial class UcPublisherDetail : UcBase
     {
         private PublisherService _publisherService = new PublisherService();
         private int _publisherId = -1;
 
-        public UcPublisherDetail()
+        public UcPublisherDetail() : base("Publisher Detail")
         {
             InitializeComponent();
         }
